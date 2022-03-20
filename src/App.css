@@ -1,3 +1,148 @@
-.App {
+.Nav-Link{
+  color: white;
+  text-decoration: none;
+}
+.Nav-Bar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.Site-Logo{
+  width: 100px;
+  height: 85px;
+}
+.MuiToolbar-root{
+  width: 100%;
+  margin: auto;
+}
+.MuiToolbar-gutters{
+  width: 100%;
+  margin: auto;
+}
+.Main{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.Main-Home{
+  margin: auto;
+  width: 100%;
+  margin-top: 160px;
+  margin-bottom: 20px;
+}
+.Media-Card{
+  width: 85%;
+  margin: auto;
+  margin-bottom: 250px;
+}
+footer {
+  margin-top: 20px;
+  padding:20px 0;
+  background-color: #9c27b0;
+  width: 100%;
+}
+.copyright {
+  margin-top:10px;
+  text-align:center;
+  font-size:13px;
+  color:rgb(221, 218, 218);
+  margin-bottom:0;
+}
+form{
+  width: 100%;
+  margin: auto;
+}
+form h1{
   text-align: center;
+  padding-top: 35px;
+}
+.Artists-List{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 70px;
+  flex-wrap: wrap;
+}
+.Artist-Card{
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 20%;
+  flex-grow: 1;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.Card-Content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Avatar{
+  margin: auto;
+  z-index: 0;
+}
+.Artist-Name{
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-top: 8px;
+  margin-bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+.Artist-Country{
+  font-size: 16px;
+  color: grey;
+  margin-bottom: 0.875em;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+.Artist-Details{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+  background-color: #ba68c8;
+  color:white;
+  border-top: 1px solid black;
+}
+.Artist-Details-Child{
+  width: 40%;
+  margin: auto;
+}
+.Artist-Details-Child p{
+  text-align: center;
+}
+.Exhibitions-List{
+  display: flex;
+  flex-direction: row;
+  width: 97%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+.Exhibition-Card{
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 20%;
+  flex-grow: 1;
+  margin-bottom: 30px;
+}
+.Exhibition-Card-Image{
+  object-fit: fill;
+  height: 500px;
+  width: auto;
+}
+.Painting-Detailed-Card{
+  width: 85%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 200px;
 }

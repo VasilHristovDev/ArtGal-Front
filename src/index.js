@@ -1,16 +1,42 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CssBaseline from '@mui/material/CssBaseline';
+import Main from './Main';
+import Exhibitions from './pages/Exhibitions';
+import Artists from './pages/Artists';
+import SignUp from './pages/Signup';
+import LogIn from './pages/Login';
+import Home from './pages/Home';
+import Paintings from './pages/Paintings';
+import Painting from './pages/Painting';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <CssBaseline>
-        <App />
+        <Routes>
+          <Route path="/" element={<Main />} >
+            <Route path="/" element={<Home />} />
+            <Route path="artists" element={<Artists />} />
+            <Route path="exhibitions" element={<Exhibitions />} />
+            <Route path="paintings" element={<Paintings />} >
+            </Route>
+            <Route path="paintings/:paintingId" element={<Painting />} />
+            <Route path="signup" element={<SignUp />} />
+            <Route path="login" element={<LogIn />} />
+            <Route
+              path="*"
+              element={
+                <main style={{marginTop:'80px', padding: "1rem" }}>
+                  <p>There's nothing here!</p>
+                </main>
+              }
+            />
+          </Route>
+        </Routes>
       </CssBaseline>
     </BrowserRouter>
   </React.StrictMode>,
