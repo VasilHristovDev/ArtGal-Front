@@ -8,7 +8,7 @@ export const signUp = async ({ name, email, age, password, password_confirmation
         'password' : password,
         'password_confirmation' : password_confirmation,
     });
-    const token = response.data.token;
+    const token = await response.data.token;
     sessionStorage.setItem('token', token);
 }
 

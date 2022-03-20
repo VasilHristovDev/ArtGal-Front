@@ -11,6 +11,7 @@ const useSignUpForm = (callback) => {
         }
         callback(inputs);
         navigate('/');
+        window.location.reload();
     }
 
     const handleInputChange = (event) => {

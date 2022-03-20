@@ -20,7 +20,7 @@ const Artists = () => {
             {artists.map((artist) =>{
                 return (
                     <ArtistCard name={artist.name} country={artist.country} paintings={artist.paintings_count}
-                        exhibitions={artist.exhibitions_count} id={artist.id} />
+                        exhibitions={artist.exhibitions_count} id={artist.id} key={artist.id} />
                 );
             })}
         </div>

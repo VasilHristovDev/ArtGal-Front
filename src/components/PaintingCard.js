@@ -12,7 +12,7 @@ const PaintingCard = ({src, alt, name, author, id}) => {
         <Card sx={{  backgroundColor: '#ba68c8'}} className='Exhibition-Card'>
             <CardMedia
                 component="img"
-                height='700'
+                height='500'
                 image={src}
                 alt={alt}
             />
@@ -22,7 +22,8 @@ const PaintingCard = ({src, alt, name, author, id}) => {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small" sx={{fontSize:'15px', color: 'white', border: '3px solid white'}} >
+                <Button size="small" sx={{fontSize:'15px', color: 'white',
+                border: '3px solid white', marginTop: '50px'}} >
                     <NavLink className='Nav-Link' to={`/paintings/${id}`} >Learn More</NavLink>
                 </Button>
             </CardActions>

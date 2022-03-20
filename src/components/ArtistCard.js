@@ -7,10 +7,12 @@ import { NavLink } from 'react-router-dom';
 
 export const ArtistCard = ({name, country, paintings, exhibitions, id, avatar_image}) => {
   return (
-    <NavLink to={`/artists/${id}`}>
+    
       <Card className='Artist-Card'>
         <CardContent className='Card-Content'>
-          <Avatar className='Avatar' sx={{ width: 60, height: 60 }} src={{avatar_image}}/>
+          <NavLink to={`/artists/${id}`}>
+            <Avatar className='Avatar' sx={{ width: 60, height: 60 }} src={{avatar_image}}/>
+          </NavLink>
           <h3 className='Artist-Name'>{name}</h3>
           <span className='Artist-Country'>{country}</span>
         </CardContent>
@@ -26,7 +28,6 @@ export const ArtistCard = ({name, country, paintings, exhibitions, id, avatar_im
           </div>
         </div>
       </Card>
-    </NavLink>
     
   );
 }
