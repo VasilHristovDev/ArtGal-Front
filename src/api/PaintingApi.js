@@ -17,6 +17,7 @@ export const getPaintings = async () => {
 export const getSizeSettings = async () => {
     const response = await axios.get(`http://artgal-amigos-bg.site/api/`);
     const data = await response.data;
+    localStorage.setItem('painting_of_the_day', data.painting_of_the_day);
     
     return data;
 }

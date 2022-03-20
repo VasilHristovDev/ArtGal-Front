@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function MediaCard({src, alt}) {
+export default function MediaCard({src, alt, name, author}) {
   return (
     <Card sx={{backgroundColor:'#ba68c8'}} className='Media-Card'>
       <CardMedia
@@ -17,7 +17,7 @@ export default function MediaCard({src, alt}) {
       />
       <CardContent sx={{height: '70px', mt: 2}}>
         <Typography variant="h4" component="div" color={'white'}>
-          Painting Name : Author Name
+          {name} : {author}
         </Typography>
       </CardContent>
       <CardActions>

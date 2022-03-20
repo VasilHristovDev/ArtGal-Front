@@ -1,14 +1,10 @@
 import { TextField, Button } from '@mui/material';
-import React from 'react';
 import useSignUpForm from '../CustomHooks';
 import Paper from '@mui/material/Paper';
+import { logIn } from '../api/UserApi';
+import React, { useState } from 'react';
 
 export default function LogIn() {
-    const logIn = () => {
-        alert(`User Logged In!
-            Email: ${inputs.email}
-            Password: ${inputs.password}`);
-    }
 
     const { inputs, handleInputChange, handleSubmit } = useSignUpForm(logIn);
 
@@ -54,7 +50,6 @@ export default function LogIn() {
                     >
                         Log In
                     </Button>
-
                 </div>
             </form>
         </Paper>

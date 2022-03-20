@@ -2,20 +2,12 @@ import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 const ExhibitionCard = ({src, alt}) => {
     return (
-        <Card sx={{  backgroundColor: '#ba68c8'}} className='Exhibition-Card'>
-            {/* <CardMedia
-                className='Exhibition-Card-Image'
-                component="img"
-                image={src}
-                height={500}
-                alt={alt}
-            /> */}
+        <Card sx={{ backgroundColor: '#ba68c8'}} className='Exhibition-Card'>
             <img src={src} alt={alt} className='Exhibition-Card-Image' />
             <CardContent sx={{height: '50px', mt: 1}}>
                 <Typography variant="h6" component="div" color={'white'}>

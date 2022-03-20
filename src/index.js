@@ -12,6 +12,7 @@ import LogIn from './pages/Login';
 import Home from './pages/Home';
 import Paintings from './pages/Paintings';
 import Painting from './pages/Painting';
+import Artist from '../src/pages/Artist';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -21,6 +22,7 @@ ReactDOM.render(
           <Route path="/" element={<Main />} >
             <Route path="/" element={<Home />} />
             <Route path="artists" element={<Artists />} />
+            <Route path="artists/:artistId" element={<Artist />} />
             <Route path="exhibitions" element={<Exhibitions />} />
             <Route path="paintings" element={<Paintings />} >
             </Route>

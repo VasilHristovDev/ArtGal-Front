@@ -2,20 +2,9 @@ import { TextField, Button } from '@mui/material';
 import React from 'react';
 import useSignUpForm from '../CustomHooks';
 import Paper from '@mui/material/Paper';
+import { signUp } from '../api/UserApi';
 
 export default function SignUp() {
-    const signUp = () => {
-
-        if(inputs.password !== inputs.confirmPassword){
-            alert("Error Passwords do not match");
-        }else{
-            alert(`User Created!
-            Name: ${inputs.firstName} ${inputs.lastName}
-            Email: ${inputs.email}
-            Password: ${inputs.password}
-            Confirm Password: ${inputs.confirmPassword}`);
-        }
-    }
 
     const { inputs, handleInputChange, handleSubmit } = useSignUpForm(signUp);
 
@@ -82,14 +71,14 @@ export default function SignUp() {
                 <br />
                 <div style={{marginLeft: '50px', marginRight: '50px'}}>
                     <TextField
-                        name='confirmPassword'
+                        name='password_confirmation'
                         label='Confirm Password'
                         required
                         type='password'
                         size='small'
                         variant="outlined"
                         onChange={handleInputChange}
-                        value={inputs.confirmPassword}
+                        value={inputs.password_confirmation}
                         sx={{width: '100%'}}
                     />
                 </div>

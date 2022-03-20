@@ -136,13 +136,20 @@ form h1{
   margin-bottom: 30px;
 }
 .Exhibition-Card-Image{
-  object-fit: fill;
-  height: 500px;
-  width: auto;
+  width: 100%;
 }
 .Painting-Detailed-Card{
   width: 85%;
   margin: auto;
   margin-top: 30px;
-  margin-bottom: 200px;
+  margin-bottom: 80px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+.Painting-Detailed-Card-Image{
+  width: 40%;
+}
+.Painting-Detailed-Card-Info{
+  width: 60%;
 }
